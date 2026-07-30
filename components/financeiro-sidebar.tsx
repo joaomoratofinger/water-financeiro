@@ -78,14 +78,20 @@ export function FinanceiroSidebar({ className }: React.HTMLAttributes<HTMLDivEle
         className,
       )}
     >
-      <div className="space-y-4 py-4 flex-1">
-        <div className="px-4 py-2">
-          <div className="flex items-center gap-2 mb-2 px-2">
-            <BadgeDollarSign className="h-5 w-5 text-emerald-600" />
-            <h2 className="text-lg font-semibold tracking-tight">Financeiro</h2>
+      <div className="flex-1">
+        <div className="px-4 py-4 border-b">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo-water.svg" alt="Water Design" className="h-5 w-auto" />
+        </div>
+        <div className="space-y-4 py-4">
+          <div className="px-4 py-2">
+            <div className="flex items-center gap-2 mb-2 px-2">
+              <BadgeDollarSign className="h-5 w-5 text-emerald-600" />
+              <h2 className="text-lg font-semibold tracking-tight">Financeiro</h2>
+            </div>
+            <p className="mb-3 px-2 text-xs text-muted-foreground">Gestão financeira</p>
+            <FinanceiroNav />
           </div>
-          <p className="mb-3 px-2 text-xs text-muted-foreground">Gestão financeira</p>
-          <FinanceiroNav />
         </div>
       </div>
     </aside>
